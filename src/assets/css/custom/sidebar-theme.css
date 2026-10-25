@@ -1,0 +1,61 @@
+/* 
+   Sidebar Theme Overrides using CSS Variables
+   This ensures instant synchronization with Theme Settings 
+*/
+
+/* Text and Icon Colors for Active/Selected items without background */
+.sidebar-menu .group.active > a, 
+.sidebar-menu .group.active > a i,
+.sidebar-menu .group.active > a span,
+.sidebar-menu ul ul li.active > a,
+.sidebar-menu ul ul li.active > a i,
+.sidebar-menu ul ul li.active > a span {
+    color: rgb(var(--color-primary-rgb)) !important;
+}
+
+/* Background and Text Colors for Selected (Open) Dropdowns */
+.sidebar-menu .group.selected > a,
+.sidebar-menu .group.selected > .sidebar-dropdown-toggle {
+    background-color: rgb(var(--color-primary-rgb)) !important;
+    color: white !important;
+}
+
+.sidebar-menu .group.selected > a i,
+.sidebar-menu .group.selected > a span,
+.sidebar-menu .group.selected > .sidebar-dropdown-toggle i,
+.sidebar-menu .group.selected > .sidebar-dropdown-toggle span {
+    color: white !important;
+}
+
+/* Active Dots (Indicators) */
+.sidebar-menu li.active > a::before, 
+.sidebar-menu li.group.active > a::before,
+.sidebar-menu ul li.active > a::before,
+.sidebar-menu ul ul li.active > a::before,
+.sidebar-menu .group.active > .sidebar-dropdown-toggle::before {
+    background-color: rgb(var(--color-primary-rgb)) !important;
+}
+
+/* Global Hover States - Top Level Only */
+.sidebar-menu > ul > li > a:hover, 
+.sidebar-menu > ul > li > .sidebar-dropdown-toggle:hover {
+    background-color: rgb(var(--color-primary-rgb)) !important;
+    color: white !important;
+}
+.sidebar-menu > ul > li > a:hover i, 
+.sidebar-menu > ul > li > a:hover span,
+.sidebar-menu > ul > li > .sidebar-dropdown-toggle:hover i,
+.sidebar-menu > ul > li > .sidebar-dropdown-toggle:hover span {
+    color: white !important;
+}
+
+/* Sub-menu items (dropdown nested) - NO Background on hover */
+.sidebar-menu ul ul a:hover {
+    background-color: transparent !important;
+    color: rgb(var(--color-primary-rgb)) !important;
+}
+
+/* Brand Theme Override */
+html[data-sidebar-theme="brand"] .sidebar-menu {
+    background-color: rgb(var(--color-primary-rgb)) !important;
+}
