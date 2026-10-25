@@ -232,7 +232,7 @@ A copy of the MIT License should be included in the repository in a file named [
 
 - **Project:** Free POS Billing Management Web Application
 - **Repository:** `Free-POS-Billing-Management-Web-Application`
-- **GitHub:** `YOUR-GITHUB-USERNAME`
+- **GitHub:** `BasitSherliyat`
 
 Replace the placeholders above with your actual repository URL and GitHub profile.
 
