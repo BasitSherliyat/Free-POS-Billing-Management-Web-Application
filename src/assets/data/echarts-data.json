@@ -1,0 +1,256 @@
+{
+    "lineChart": {
+        "series": [
+            {
+                "name": "Revenue",
+                "data": [
+                    100,
+                    75,
+                    50,
+                    75,
+                    50,
+                    75,
+                    100
+                ]
+            },
+            {
+                "name": "Profit",
+                "data": [
+                    90,
+                    65,
+                    40,
+                    65,
+                    40,
+                    65,
+                    90
+                ]
+            }
+        ],
+        "xAxis": [
+            "2019",
+            "2020",
+            "2021",
+            "2022",
+            "2023",
+            "2024",
+            "2025"
+        ]
+    },
+    "areaChart": {
+        "series": [
+            {
+                "name": "Series A",
+                "data": [
+                    60,
+                    75,
+                    50,
+                    75,
+                    50,
+                    75,
+                    90
+                ]
+            },
+            {
+                "name": "Series B",
+                "data": [
+                    40,
+                    65,
+                    40,
+                    65,
+                    40,
+                    65,
+                    60
+                ]
+            }
+        ],
+        "xAxis": [
+            "Jan",
+            "Feb",
+            "Mar",
+            "Apr",
+            "May",
+            "Jun",
+            "Jul"
+        ]
+    },
+    "barChart": {
+        "series": [
+            {
+                "name": "Sales",
+                "data": [
+                    100,
+                    75,
+                    50,
+                    75,
+                    50,
+                    75
+                ]
+            },
+            {
+                "name": "Revenue",
+                "data": [
+                    90,
+                    65,
+                    40,
+                    65,
+                    40,
+                    65
+                ]
+            }
+        ],
+        "xAxis": [
+            "Jan",
+            "Feb",
+            "Mar",
+            "Apr",
+            "May",
+            "Jun"
+        ]
+    },
+    "pieChart": {
+        "data": [
+            {
+                "value": 55,
+                "name": "Desktop"
+            },
+            {
+                "value": 30,
+                "name": "Mobile"
+            },
+            {
+                "value": 15,
+                "name": "Tablet"
+            }
+        ]
+    },
+    "donutChart": {
+        "data": [
+            {
+                "value": 45,
+                "name": "Chrome"
+            },
+            {
+                "value": 25,
+                "name": "Firefox"
+            },
+            {
+                "value": 20,
+                "name": "Safari"
+            },
+            {
+                "value": 10,
+                "name": "Edge"
+            }
+        ]
+    },
+    "radarChart": {
+        "series": [
+            {
+                "name": "Product A",
+                "value": [
+                    65,
+                    59,
+                    90,
+                    81,
+                    56
+                ]
+            },
+            {
+                "name": "Product B",
+                "value": [
+                    28,
+                    48,
+                    40,
+                    19,
+                    96
+                ]
+            }
+        ],
+        "indicator": [
+            {
+                "name": "Speed",
+                "max": 100
+            },
+            {
+                "name": "Reliability",
+                "max": 100
+            },
+            {
+                "name": "Comfort",
+                "max": 100
+            },
+            {
+                "name": "Safety",
+                "max": 100
+            },
+            {
+                "name": "Efficiency",
+                "max": 100
+            }
+        ]
+    },
+    "gaugeChart": {
+        "value": 75
+    },
+    "funnelChart": {
+        "data": [
+            {
+                "value": 100,
+                "name": "Visits"
+            },
+            {
+                "value": 80,
+                "name": "Inquiries"
+            },
+            {
+                "value": 60,
+                "name": "Proposals"
+            },
+            {
+                "value": 40,
+                "name": "Negotiations"
+            },
+            {
+                "value": 20,
+                "name": "Conversions"
+            }
+        ]
+    },
+    "stackedBarChart": {
+        "series": [
+            {
+                "name": "Product A",
+                "data": [
+                    3,
+                    2,
+                    0,
+                    2
+                ]
+            },
+            {
+                "name": "Product B",
+                "data": [
+                    2,
+                    0,
+                    2,
+                    3
+                ]
+            },
+            {
+                "name": "Product C",
+                "data": [
+                    3,
+                    1,
+                    4,
+                    3
+                ]
+            }
+        ],
+        "xAxis": [
+            "Q1",
+            "Q2",
+            "Q3",
+            "Q4"
+        ]
+    }
+}

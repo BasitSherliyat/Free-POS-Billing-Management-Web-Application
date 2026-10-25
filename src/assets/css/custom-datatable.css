@@ -1,0 +1,230 @@
+/* Custom Data Table Styles */
+
+/* Wrapper */
+.datatable-wrapper {
+    width: 100%;
+}
+
+/* Header (Entries & Search) */
+.datatable-top {
+    padding: 1.5rem 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    background-color: transparent !important;
+}
+
+/* Footer (Info & Pagination) */
+.datatable-bottom {
+    padding: 1.5rem !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    background-color: transparent !important;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.dark .datatable-bottom {
+    border-top-color: rgba(255, 255, 255, 0.05);
+}
+
+/* Selector (Rows per page) */
+.datatable-selector {
+    padding: 0.5rem 2rem 0.5rem 1rem !important;
+    font-size: 0.875rem !important;
+    line-height: 1.25rem !important;
+    border-radius: 0.5rem !important;
+    border: 1px solid rgba(0, 0, 0, 0.1) !important;
+    background-color: #fff !important;
+    color: #1f2937 !important;
+    outline: none !important;
+    appearance: none !important;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='rgba(0,0,0,0.5)'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'%3E%3C/path%3E%3C/svg%3E") !important;
+    background-repeat: no-repeat !important;
+    background-position: right 0.5rem center !important;
+    background-size: 1em 1em !important;
+    transition: all 0.2s !important;
+}
+
+.datatable-selector:focus {
+    border-color: rgb(var(--color-primary)) !important;
+    box-shadow: 0 0 0 1px rgb(var(--color-primary)) !important;
+}
+
+.dark .datatable-selector {
+    background-color: rgba(255, 255, 255, 0.05) !important;
+    border-color: rgba(255, 255, 255, 0.1) !important;
+    color: rgba(255, 255, 255, 0.8) !important;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='rgba(255,255,255,0.5)'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'%3E%3C/path%3E%3C/svg%3E") !important;
+}
+
+/* Search Input */
+.datatable-input {
+    padding: 0.5rem 1rem !important;
+    font-size: 0.875rem !important;
+    line-height: 1.25rem !important;
+    border-radius: 0.5rem !important;
+    border: 1px solid rgba(0, 0, 0, 0.1) !important;
+    background-color: #fff !important;
+    color: #1f2937 !important;
+    outline: none !important;
+    transition: all 0.2s !important;
+    min-width: 250px !important;
+}
+
+.datatable-input:focus {
+    border-color: rgb(var(--color-primary)) !important;
+    box-shadow: 0 0 0 4px rgba(var(--color-primary), 0.1) !important;
+}
+
+.dark .datatable-input {
+    background-color: rgba(255, 255, 255, 0.05) !important;
+    border-color: rgba(255, 255, 255, 0.1) !important;
+    color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.dark .datatable-input::placeholder {
+    color: rgba(255, 255, 255, 0.3) !important;
+}
+
+/* Table */
+.datatable-table {
+    border-spacing: 0 !important;
+    border-collapse: collapse !important;
+}
+
+.datatable-table thead th {
+    vertical-align: bottom !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05) !important;
+    text-align: left !important;
+    padding: 1rem 1.5rem !important;
+    font-size: 0.75rem !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    color: rgba(0, 0, 0, 0.6) !important;
+    background-color: rgba(0, 0, 0, 0.02) !important;
+}
+
+.datatable-table tbody td {
+    padding: 1rem 1.5rem !important;
+    vertical-align: middle !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05) !important;
+    font-size: 0.875rem !important;
+    color: #4b5563 !important;
+}
+
+.dark .datatable-table thead th {
+    background-color: rgba(255, 255, 255, 0.03) !important;
+    color: rgba(255, 255, 255, 0.6) !important;
+    border-bottom-color: rgba(255, 255, 255, 0.05) !important;
+}
+
+.dark .datatable-table tbody td {
+    border-bottom-color: rgba(255, 255, 255, 0.05) !important;
+    color: rgba(255, 255, 255, 0.7) !important;
+}
+
+/* Sorter Icons */
+.datatable-sorter::before {
+    bottom: 2px !important;
+    border-top-color: currentColor !important;
+    opacity: 0.3 !important;
+}
+
+.datatable-sorter::after {
+    top: 0px !important;
+    border-bottom-color: currentColor !important;
+    opacity: 0.3 !important;
+}
+
+.datatable-ascending .datatable-sorter::after,
+.datatable-descending .datatable-sorter::before {
+    opacity: 1 !important;
+    color: rgb(var(--color-primary)) !important;
+}
+
+/* Pagination */
+.datatable-pagination ul {
+    margin: 0 !important;
+    padding: 0 !important;
+    display: flex !important;
+    gap: 0.25rem !important;
+}
+
+.datatable-pagination li {
+    float: none !important;
+}
+
+.datatable-pagination a,
+.datatable-pagination button {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 2rem !important;
+    height: 2rem !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    border-radius: 0.5rem !important;
+    font-size: 0.875rem !important;
+    font-weight: 500 !important;
+    color: #4b5563 !important;
+    background: transparent !important;
+    border: 1px solid transparent !important;
+    transition: all 0.2s !important;
+    cursor: pointer !important;
+    position: relative !important;
+}
+
+.datatable-pagination a:hover,
+.datatable-pagination button:hover {
+    background-color: rgba(var(--color-primary), 0.1) !important;
+    color: rgb(var(--color-primary)) !important;
+}
+
+.datatable-active a,
+.datatable-active button,
+.datatable-pagination .datatable-active a,
+.datatable-pagination .datatable-active button {
+    background-color: rgb(var(--color-primary)) !important;
+    color: #fff !important;
+    cursor: default !important;
+}
+
+.datatable-active a:hover,
+.datatable-active button:hover {
+    background-color: rgb(var(--color-primary)) !important;
+    color: #fff !important;
+}
+
+.dark .datatable-pagination a,
+.dark .datatable-pagination button {
+    color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.dark .datatable-pagination a:hover,
+.dark .datatable-pagination button:hover {
+    background-color: rgba(var(--color-primary), 0.2) !important;
+    color: rgb(var(--color-primary)) !important;
+}
+
+/* Info Text */
+.datatable-info {
+    font-size: 0.875rem !important;
+    color: #6b7280 !important;
+    margin: 0 !important;
+}
+
+.dark .datatable-info {
+    color: rgba(255, 255, 255, 0.5) !important;
+}
+
+/* Empty State */
+.datatable-empty {
+    padding: 3rem !important;
+    color: #6b7280 !important;
+    font-size: 0.875rem !important;
+}
+
+.dark .datatable-empty {
+    color: rgba(255, 255, 255, 0.5) !important;
+}
